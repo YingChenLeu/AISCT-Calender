@@ -1,21 +1,21 @@
 import { Routes, Route } from "react-router-dom";
+import Calender from "./components/calender";
 
 const App = () => {
   return (
     <>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/events" element={<Events />} />
-    </Routes>
-
-      
-
-
-    
-
+        <Route
+          path="/"
+          element={
+            <>
+              <Calender />
+            </>
+          }
+        />
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
